@@ -3,306 +3,404 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Proyecto: Analytics and Data Visualization with Power BI for ABC Glass
-    </title>
+    <title>ABC Glass - Analytics Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
       body {
         font-family: "Inter", sans-serif;
       }
     </style>
   </head>
-  <body class="bg-gray-50 text-gray-900 leading-normal">
+  <body class="bg-slate-50 text-slate-800 antialiased">
     <div
-      class="max-w-4xl mx-auto my-10 p-8 bg-white shadow-lg border border-gray-200 rounded-lg"
+      class="max-w-5xl mx-auto my-12 bg-white shadow-2xl rounded-xl overflow-hidden border border-slate-200"
     >
-      <div class="mb-8 text-center border-b pb-6">
-        <p class="text-gray-400 italic mb-4">[Insertar imagen 1] [cite: 1]</p>
-        <h1 class="text-3xl font-bold text-blue-900 uppercase">
+      <header class="bg-[#002855] p-10 text-center">
+        <img
+          src="./public/img/1-Logo.png"
+          alt="ABC Glass Logo"
+          class="h-32 mx-auto mb-6 shadow-lg rounded-lg"
+        />
+        [cite: 1]
+        <h1
+          class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight"
+        >
           Proyecto: Analytics and Data Visualization with Power BI for ABC Glass
           [cite: 2]
         </h1>
-      </div>
+      </header>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center">
-          📌 Descripción General del Proyecto [cite: 3]
-        </h2>
-        <p class="text-lg">
-          Este proyecto busca implementar un KPI, un modelo de datos, un
-          dashboard y reportes de resultados de producción para una empresa
-          ficticia del sector automotriz. [cite: 4]
-        </p>
-      </section>
+      <main class="p-8 md:p-16 space-y-12">
+        <section>
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            📌 Descripción General del Proyecto [cite: 3]
+          </h2>
+          <p class="text-lg leading-relaxed">
+            Este proyecto busca implementar un KPI, un modelo de datos, un
+            dashboard y reportes de resultados de producción para una empresa
+            ficticia del sector automotriz[cite: 4].
+          </p>
+        </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">
-          1. Objetivos y contexto [cite: 5]
-        </h2>
+        <section class="space-y-6">
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            1. Objetivos y contexto [cite: 5]
+          </h2>
 
-        <h3 class="text-xl font-medium mb-3 flex items-center">
-          🎯 Objetivos Principales [cite: 6]
-        </h3>
-        <ul class="list-disc pl-8 space-y-2 mb-6">
-          <li>
-            Definir un KPI del negocio basado en el libro Key Performance
-            Indicators (KPI): The 75 Measures Every Manager Needs to Know de
-            Bernard Marr, incluyendo su concepto, importancia, fórmula, umbrales
-            e impacto económico. [cite: 7]
-          </li>
-          <li>
-            Describir un modelo de datos que permita calcular el KPI definido.
-            [cite: 8]
-          </li>
-          <li>
-            Elaborar un caso de negocio que ilustre cómo una estrategia puede
-            corregir una desviación del KPI según sus umbrales. [cite: 9]
-          </li>
-          <li>Desarrollar un dashboard del KPI. [cite: 10]</li>
-          <li>
-            Elaborar reportes del KPI y otros indicadores asociados para
-            responder a 10 preguntas relevantes de análisis del negocio. [cite:
-            11]
-          </li>
-        </ul>
+          <h3 class="text-xl font-semibold flex items-center">
+            <span class="mr-2 text-2xl">🎯</span> Objetivos Principales [cite:
+            6]
+          </h3>
+          <ul class="list-disc pl-8 space-y-3">
+            <li>
+              Definir un KPI del negocio basado en el libro Key Performance
+              Indicators (KPI): The 75 Measures Every Manager Needs to Know de
+              Bernard Marr, incluyendo su concepto, importancia, fórmula,
+              umbrales e impacto económico[cite: 7].
+            </li>
+            <li>
+              Describir un modelo de datos que permita calcular el KPI
+              definido[cite: 8].
+            </li>
+            <li>
+              Elaborar un caso de negocio que ilustre cómo una estrategia puede
+              corregir una desviación del KPI según sus umbrales[cite: 9].
+            </li>
+            <li>Desarrollar un dashboard del KPI[cite: 10].</li>
+            <li>
+              Elaborar reportes del KPI y otros indicadores asociados para
+              responder a 10 preguntas relevantes de análisis del negocio[cite:
+              11].
+            </li>
+          </ul>
 
-        <h3 class="text-xl font-medium mb-3 flex items-center text-blue-800">
-          🏭 Información del negocio [cite: 12]
-        </h3>
-        <p class="font-bold mb-2">ABC Glass [cite: 13]</p>
-        <p class="mb-4">
-          ABC Glass es una empresa ficticia dedicada al diseño y fabricación de
-          vidrio automotriz para fabricantes de vehículos. [cite: 14] La
-          compañía desarrolla soluciones de vidrio orientadas a la seguridad,
-          funcionalidad y facilidad de ensamblaje en vehículos modernos. [cite:
-          15] La empresa ficticia opera como proveedor Tier 1 de componentes
-          automotrices, suministrando vidrio a fabricantes OEM de vehículos de
-          diversos cuatro países. [cite: 16]
-        </p>
+          <h3 class="text-xl font-semibold flex items-center pt-4">
+            <span class="mr-2 text-2xl">🏭</span> Información del negocio [cite:
+            12]
+          </h3>
+          <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-blue-900">
+            <p class="font-bold text-blue-900 mb-2">ABC Glass [cite: 13]</p>
+            <p class="mb-4">
+              ABC Glass es una empresa ficticia dedicada al diseño y fabricación
+              de vidrio automotriz para fabricantes de vehículos[cite: 14].
+            </p>
+            <p class="mb-4">
+              La compañía desarrolla soluciones de vidrio orientadas a la
+              seguridad, funcionalidad y facilidad de ensamblaje en vehículos
+              modernos[cite: 15].
+            </p>
+            <p>
+              La empresa ficticia opera como proveedor Tier 1 de componentes
+              automotrices, suministrando vidrio a fabricantes OEM de vehículos
+              de diversos cuatro países[cite: 16].
+            </p>
+          </div>
 
-        <h3 class="text-xl font-medium mb-3 flex items-center">
-          🧩 Productos [cite: 17]
-        </h3>
-        <p class="mb-2">
-          ABC Glass ofrece vidrios para distintas partes del vehículo,
-          incluyendo: [cite: 18]
-        </p>
-        <ul class="list-none pl-4 space-y-1 mb-4">
-          <li>• Parabrisas delantero [cite: 19]</li>
-          <li>• Vidrios laterales [cite: 20]</li>
-          <li>• Parabrisas posterior [cite: 21]</li>
-          <li>• Sunroof [cite: 22]</li>
-        </ul>
-        <p class="mb-4">
-          La empresa produce estos vidrios utilizando diferentes tecnologías de
-          seguridad, principalmente vidrio laminado y vidrio templado, de
-          acuerdo con los requerimientos del fabricante automotriz. [cite: 23]
-          Adicionalmente, ABC Glass ofrece vidrios con componentes integrados o
-          pre-ensamblados, lo que permite reducir operaciones en la línea de
-          ensamblaje del fabricante del vehículo. [cite: 24] Entre estos
-          componentes se incluyen, por ejemplo: [cite: 25]
-        </p>
-        <ul class="list-none pl-4 space-y-1 mb-4">
-          <li>
-            • Brackets o soportes para cámaras frontales (ADAS) [cite: 26]
-          </li>
-          <li>• Soportes para sensores de luz o lluvia [cite: 27]</li>
-          <li>• Pines de posicionamiento [cite: 28]</li>
-          <li>• Conectores eléctricos [cite: 29]</li>
-          <li>
-            • entre otros componentes utilizados en sistemas automotrices
-            modernos. [cite: 30]
-          </li>
-        </ul>
-        <p class="text-gray-400 italic mb-6">[Insertar imagen 2] [cite: 31]</p>
+          <h3 class="text-xl font-semibold flex items-center pt-4">
+            <span class="mr-2 text-2xl">🧩</span> Productos [cite: 17]
+          </h3>
+          <p class="mb-4">
+            ABC Glass ofrece vidrios para distintas partes del vehículo,
+            incluyendo[cite: 18]:
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div
+              class="p-4 bg-white border border-slate-200 rounded text-center shadow-sm italic"
+            >
+              Parabrisas delantero [cite: 19]
+            </div>
+            <div
+              class="p-4 bg-white border border-slate-200 rounded text-center shadow-sm italic"
+            >
+              Vidrios laterales [cite: 20]
+            </div>
+            <div
+              class="p-4 bg-white border border-slate-200 rounded text-center shadow-sm italic"
+            >
+              Parabrisas posterior [cite: 21]
+            </div>
+            <div
+              class="p-4 bg-white border border-slate-200 rounded text-center shadow-sm italic"
+            >
+              Sunroof [cite: 22]
+            </div>
+          </div>
+          <p class="mb-4">
+            La empresa produce estos vidrios utilizando diferentes tecnologías
+            de seguridad, principalmente vidrio laminado y vidrio templado, de
+            acuerdo con los requerimientos del fabricante automotriz[cite: 23].
+          </p>
+          <p class="mb-4">
+            Adicionalmente, ABC Glass ofrece vidrios con componentes integrados
+            o pre-ensamblados, lo que permite reducir operaciones en la línea de
+            ensamblaje del fabricante del vehículo[cite: 24].
+          </p>
+          <p class="mb-2">
+            Entre estos componentes se incluyen, por ejemplo[cite: 25]:
+          </p>
+          <ul class="grid md:grid-cols-2 gap-2 pl-4 mb-8">
+            <li class="flex items-center">
+              ▪️ Brackets o soportes para cámaras frontales (ADAS) [cite: 26]
+            </li>
+            <li class="flex items-center">
+              ▪️ Soportes para sensores de luz o lluvia [cite: 27]
+            </li>
+            <li class="flex items-center">
+              ▪️ Pines de posicionamiento [cite: 28]
+            </li>
+            <li class="flex items-center">
+              ▪️ Conectores eléctricos [cite: 29]
+            </li>
+            <li class="flex items-center">
+              ▪️ entre otros componentes utilizados en sistemas automotrices
+              modernos [cite: 30]
+            </li>
+          </ul>
 
-        <h3 class="text-xl font-medium mb-3 flex items-center">
-          🌍 Mercado [cite: 32]
-        </h3>
-        <p class="mb-4">
-          El mercado objetivo incluye Fabricantes de vehículos eléctricos y
-          fabricantes de vehículos deportivos y de lujo. [cite: 33] Así, De
-          manera ficticia, ABC Glass ofrece sus productos a clientes OEM como
-          Tesla, Volkswagen y McLaren, utilizados únicamente como referencias
-          del mercado automotriz global. [cite: 34] En este contexto, ABC Glass
-          exporta sus productos a Estados Unidos, Japón, Reino Unido y Alemania.
-          [cite: 35]
-        </p>
-      </section>
+          <div class="bg-slate-100 p-4 rounded-xl">
+            <img
+              src="./public/img/2-Portafolio.png"
+              alt="Portafolio de Productos"
+              class="w-full h-auto rounded shadow-md"
+            />
+            [cite: 31]
+          </div>
 
-      <section class="mb-10 bg-gray-50 p-6 rounded border border-yellow-200">
-        <h2 class="text-lg font-bold text-yellow-800 mb-2 uppercase">
-          ⚠️ Disclaimer / Aviso legal [cite: 37]
-        </h2>
-        <div class="text-sm text-yellow-900 space-y-2">
-          <p>
-            Este proyecto describe una empresa ficticia creada con fines
-            educativos y demostrativos. [cite: 38]
+          <h3 class="text-xl font-semibold flex items-center pt-6">
+            <span class="mr-2 text-2xl">🌍</span> Mercado [cite: 32]
+          </h3>
+          <p class="mb-4">
+            El mercado objetivo incluye Fabricantes de vehículos eléctricos y
+            fabricantes de vehículos deportivos y de lujo[cite: 33].
+          </p>
+          <p class="mb-4">
+            Así, De manera ficticia, ABC Glass ofrece sus productos a clientes
+            OEM como Tesla, Volkswagen y McLaren, utilizados únicamente como
+            referencias del mercado automotriz global[cite: 34].
           </p>
           <p>
+            En este contexto, ABC Glass exporta sus productos a Estados Unidos,
+            Japón, Reino Unido y Alemania[cite: 35].
+          </p>
+        </section>
+
+        <section
+          class="bg-amber-50 p-6 rounded-lg border-2 border-amber-200 text-amber-900 text-sm"
+        >
+          <h3 class="font-bold text-lg mb-2">
+            ⚠️ Disclaimer / Aviso legal [cite: 37]
+          </h3>
+          <p class="mb-2">
+            Este proyecto describe una empresa ficticia creada con fines
+            educativos y demostrativos[cite: 38].
+          </p>
+          <p class="mb-2">
             Los nombres de empresas automotrices mencionados se utilizan
             únicamente como referencia del sector y como ejemplos de fabricantes
             del mercado, y no representan relaciones comerciales reales con la
-            empresa ficticia ABC Glass. [cite: 39]
+            empresa ficticia ABC Glass[cite: 39].
           </p>
-          <p>
+          <p class="mb-2">
             Todos los datos, cifras, análisis y ejemplos presentados en este
             proyecto son completamente ficticios y han sido generados únicamente
-            con fines ilustrativos. [cite: 40]
+            con fines ilustrativos[cite: 40].
           </p>
-          <p>
+          <p class="mb-2">
             No corresponden ni representan información real de las empresas
-            mencionadas. [cite: 41]
+            mencionadas[cite: 41].
           </p>
-          <p>
+          <p class="mb-2">
             Todas las marcas comerciales, nombres de empresas y marcas
-            registradas pertenecen a sus respectivos propietarios. [cite: 42]
+            registradas pertenecen a sus respectivos propietarios[cite: 42].
           </p>
           <p>
             Este proyecto no está afiliado, patrocinado ni respaldado por
-            ninguna de las empresas mencionadas. [cite: 43]
+            ninguna de las empresas mencionadas[cite: 43].
           </p>
-        </div>
-      </section>
+        </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">2. Metodología [cite: 44]</h2>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>
-            Este proyecto se desarrolló como parte del curso de Analytics and
-            Data Visualization with Power BI de la Diplomatura Business
-            Analytics. [cite: 45]
-          </li>
-          <li>
-            Incluyó trabajo en equipo de los integrantes del proyectos y
-            asesoría del docente del curso. [cite: 46]
-          </li>
-          <li>
-            Para el armado de la base datos ficticia se empleó IA, obteniéndose
-            más de 1000 registros en las tablas transaccionales. [cite: 47]
-          </li>
-        </ul>
-      </section>
+        <section>
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            2. Metodología [cite: 44]
+          </h2>
+          <ul class="list-disc pl-8 space-y-3">
+            <li>
+              Este proyecto se desarrolló como parte del curso de Analytics and
+              Data Visualization with Power BI de la Diplomatura Business
+              Analytics[cite: 45].
+            </li>
+            <li>
+              Incluyó trabajo en equipo de los integrantes del proyectos y
+              asesoría del docente del curso[cite: 46].
+            </li>
+            <li>
+              Para el armado de la base datos ficticia se empleó IA,
+              obteniéndose más de 1000 registros en las tablas
+              transaccionales[cite: 47].
+            </li>
+          </ul>
+        </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">3. Desarrollo [cite: 48]</h2>
-        <p class="mb-6">
-          A continuación, se responden a cada uno de los objetivos del proyecto.
-          [cite: 49]
-        </p>
+        <section class="space-y-10">
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            3. Desarrollo [cite: 48]
+          </h2>
+          <p class="italic text-slate-500">
+            A continuación, se responden a cada uno de los objetivos del
+            proyecto[cite: 49].
+          </p>
 
-        <p class="font-medium mb-2">
-          Definir un KPI del negocio basado en el libro Key Performance
-          Indicators (KPI): The 75 Measures Every Manager Needs to Know de
-          Bernard Marr, incluyendo su concepto, importancia, fórmula, umbrales e
-          impacto económico. [cite: 50]
-        </p>
-        <p class="text-gray-400 italic mb-8">[Insertar imagen 3] [cite: 51]</p>
+          <div class="space-y-6">
+            <p class="font-semibold">
+              Definir un KPI del negocio basado en el libro Key Performance
+              Indicators (KPI): The 75 Measures Every Manager Needs to Know de
+              Bernard Marr, incluyendo su concepto, importancia, fórmula,
+              umbrales e impacto económico[cite: 50].
+            </p>
+            <div class="bg-white p-4 border rounded-xl shadow-sm">
+              <img
+                src="./public/img/3-Obj1.png"
+                alt="KPI Definition"
+                class="w-full h-auto rounded shadow-sm"
+              />
+              [cite: 51]
+            </div>
 
-        <p class="font-medium mb-4">
-          Describir un modelo de datos que permita calcular el KPI definido.
-          [cite: 52]
-        </p>
-        <p class="mb-4">
-          El modelo de datos incluye las siguientes 10 tablas. Posteriormente,
-          en un diagrama se mostrará como se relacionan en el modelo de datos.
-          [cite: 53]
-        </p>
+            <p class="font-semibold pt-8">
+              Describir un modelo de datos que permita calcular el KPI
+              definido[cite: 52].
+            </p>
+            <p class="mb-4">
+              El modelo de datos incluye las siguientes 10 tablas.
+              Posteriormente, en un diagrama se mostrará como se relacionan en
+              el modelo de datos[cite: 53].
+            </p>
 
-        <p class="mb-2 italic text-gray-600">The following table: [cite: 54]</p>
-        <div class="overflow-x-auto mb-6">
-          <table class="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr class="bg-gray-100">
-                <th class="border border-gray-300 px-4 py-2 text-left">#</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">
-                  TABLAS
-                </th>
-                <th class="border border-gray-300 px-4 py-2 text-left">TIPO</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">1</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  MODELO_VEHICULO
-                </td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">2</td>
-                <td class="border border-gray-300 px-4 py-2">TIPO_VIDRIO</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">3</td>
-                <td class="border border-gray-300 px-4 py-2">CARACTERISTICA</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">4</td>
-                <td class="border border-gray-300 px-4 py-2">ESPECIFICACION</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">5</td>
-                <td class="border border-gray-300 px-4 py-2">CLIENTE</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">6</td>
-                <td class="border border-gray-300 px-4 py-2">PAIS</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">7</td>
-                <td class="border border-gray-300 px-4 py-2">PEDIDO</td>
-                <td class="border border-gray-300 px-4 py-2">Transaccional</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">8</td>
-                <td class="border border-gray-300 px-4 py-2">PRODUCCION</td>
-                <td class="border border-gray-300 px-4 py-2">Transaccional</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">9</td>
-                <td class="border border-gray-300 px-4 py-2">DEFECTO</td>
-                <td class="border border-gray-300 px-4 py-2">Maestro</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">10</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  CATEGORÍA DEFECTO
-                </td>
-                <td class="border border-gray-300 px-4 py-2">Transaccional</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <div
+              class="overflow-x-auto shadow-sm border border-slate-200 rounded-lg"
+            >
+              <table class="w-full text-left text-sm border-collapse">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="px-6 py-3 border">#</th>
+                    <th class="px-6 py-3 border">TABLAS</th>
+                    <th class="px-6 py-3 border">TIPO</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y">
+                  <tr>
+                    <td class="px-6 py-3 border">1</td>
+                    <td class="px-6 py-3 border font-medium">
+                      MODELO_VEHICULO
+                    </td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">2</td>
+                    <td class="px-6 py-3 border font-medium">TIPO_VIDRIO</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">3</td>
+                    <td class="px-6 py-3 border font-medium">CARACTERISTICA</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">4</td>
+                    <td class="px-6 py-3 border font-medium">ESPECIFICACION</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">5</td>
+                    <td class="px-6 py-3 border font-medium">CLIENTE</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">6</td>
+                    <td class="px-6 py-3 border font-medium">PAIS</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">7</td>
+                    <td class="px-6 py-3 border font-medium">PEDIDO</td>
+                    <td class="px-6 py-3 border font-bold text-red-700">
+                      Transaccional
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">8</td>
+                    <td class="px-6 py-3 border font-medium">PRODUCCION</td>
+                    <td class="px-6 py-3 border font-bold text-red-700">
+                      Transaccional
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">9</td>
+                    <td class="px-6 py-3 border font-medium">DEFECTO</td>
+                    <td class="px-6 py-3 border italic">Maestro</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border">10</td>
+                    <td class="px-6 py-3 border font-medium">
+                      CATEGORÍA DEFECTO
+                    </td>
+                    <td class="px-6 py-3 border font-bold text-red-700">
+                      Transaccional
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            [cite: 54]
 
-        <p class="text-gray-400 italic mb-10">[Insertar imagen 4] [cite: 55]</p>
+            <div class="mt-8">
+              <img
+                src="./public/img/4-Modelo.png"
+                alt="Data Model Diagram"
+                class="w-full h-auto rounded-xl shadow-md border"
+              />
+              [cite: 55]
+            </div>
 
-        <p class="font-medium mb-4">
-          Elaborar un caso de negocio que ilustre cómo una estrategia puede
-          corregir una desviación del KPI según sus umbrales. [cite: 56]
-        </p>
-        <p class="text-gray-400 italic mb-10">[Insertar imagen 5] [cite: 57]</p>
+            <p class="font-semibold pt-8">
+              Elaborar un caso de negocio que ilustre cómo una estrategia puede
+              corregir una desviación del KPI según sus umbrales[cite: 56].
+            </p>
+            <div class="bg-white p-4 border rounded-xl shadow-sm">
+              <img
+                src="./public/img/5-Business-case.png"
+                alt="Business Case"
+                class="w-full h-auto rounded shadow-sm"
+              />
+              [cite: 57]
+            </div>
 
-        <p class="font-medium mb-4">
-          Desarrollar un dashboard del KPI. [cite: 58]
-        </p>
-        <p class="font-medium mb-4">
-          Elaborar reportes del KPI y otros indicadores asociados para responder
-          a 10 preguntas relevantes de análisis del negocio. [cite: 59]
-        </p>
-      </section>
+            <p class="font-semibold pt-8">
+              Desarrollar un dashboard del KPI[cite: 58].
+            </p>
+            <p class="font-semibold">
+              Elaborar reportes del KPI y otros indicadores asociados para
+              responder a 10 preguntas relevantes de análisis del negocio[cite:
+              59].
+            </p>
+          </div>
+        </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 border-t pt-6">
-          5. Conclusiones [cite: 60]
-        </h2>
-      </section>
+        <section>
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            5. Conclusiones [cite: 60]
+          </h2>
+          <div class="h-1 bg-slate-100 rounded"></div>
+        </section>
+      </main>
+
+      <footer
+        class="bg-slate-100 p-8 text-center text-slate-500 text-sm border-t"
+      >
+        © 2026 ABC Glass Analytics - Desarrollado para Diplomatura Business
+        Analytics
+      </footer>
     </div>
   </body>
 </html>
