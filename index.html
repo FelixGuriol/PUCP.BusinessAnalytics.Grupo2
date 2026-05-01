@@ -577,18 +577,387 @@
           </div>
         </section>
 
+        <section class="space-y-10">
+          <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
+            4. Herramientas Tecnológicas y Arquitectura
+          </h2>
+
+          <!-- Herramientas Tecnológicas -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold flex items-center">
+              <span class="mr-2 text-2xl">🔧</span> Herramientas Tecnológicas
+            </h3>
+            <p class="leading-relaxed">
+              Para el desarrollo de este proyecto se emplearon diversas
+              herramientas de Microsoft Cloud y aplicaciones de apoyo que
+              permitieron integrar, transformar y visualizar los datos de manera
+              eficiente:
+            </p>
+            <div class="overflow-x-auto shadow-sm border border-slate-200 rounded-lg">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="px-6 py-3 border">Tecnología</th>
+                    <th class="px-6 py-3 border">Función Principal</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y">
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Azure SQL</td>
+                    <td class="px-6 py-3 border">Almacenamiento relacional en la nube para centralizar y normalizar los datos.</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Microsoft Fabric</td>
+                    <td class="px-6 py-3 border">Procesamiento, integración y orquestación de datos mediante pipelines y notebooks.</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Power BI</td>
+                    <td class="px-6 py-3 border">Creación de dashboards interactivos y reportes dinámicos para el análisis de indicadores.</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Power Apps</td>
+                    <td class="px-6 py-3 border">Registro operativo de pedidos, entregas, inventario y actualización de tablas maestras.</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Lucidchart</td>
+                    <td class="px-6 py-3 border">Diseño de diagramas de flujo y modelos de arquitectura para documentar los procesos.</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Power Automate</td>
+                    <td class="px-6 py-3 border">Automatización de reportes y envío de información periódica vía correo electrónico.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Arquitectura del Proyecto -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold flex items-center pt-4">
+              <span class="mr-2 text-2xl">🏗️</span> Arquitectura del Proyecto
+            </h3>
+            <p class="leading-relaxed">
+              La arquitectura del proyecto fue diseñada para integrar múltiples
+              herramientas en la nube con el fin de automatizar y facilitar la
+              medición del <strong>KPI</strong>. Esta solución combina el uso de
+              una base de datos en SQL Azure, procesamiento automático en
+              Microsoft Fabric, aplicaciones operativas en Power Apps, flujos de
+              automatización con Power Automate y visualizaciones con Power BI.
+            </p>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/arquitectura.png"
+                alt="Diagrama de Arquitectura del Proyecto"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+
+            <!-- Descripción de capas -->
+            <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-blue-900 space-y-5">
+              <div>
+                <p class="font-bold text-blue-900 mb-1">📁 Data Sources</p>
+                <p>El origen de los datos son archivos SQL que contienen información transaccional del negocio. Estos archivos constituyen el punto de entrada de la arquitectura y alimentan el proceso de ingesta hacia Azure SQL Database.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">🗄️ Azure SQL Database</p>
+                <p>Los datos son procesados mediante ETL e ingresados en Azure SQL Database, donde se normalizan y estructuran en un modelo relacional en la nube, sirviendo como fuente central para los procesos de transformación posteriores.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">📱 Power Apps</p>
+                <p>Power Apps permite a los usuarios operativos registrar y actualizar información directamente desde formularios conectados a la arquitectura, alimentando el Fabric Data Warehouse con datos capturados en tiempo real.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">⚙️ Data Flow & Pipeline (ETL)</p>
+                <p>Los componentes Data Flow y Pipeline de Microsoft Fabric orquestan la transformación y carga de datos desde Azure SQL Database hacia el Fabric Data Warehouse, automatizando la ingesta y garantizando la calidad de la información.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">🏢 Fabric Data Warehouse</p>
+                <p>El Fabric Data Warehouse es el repositorio central que consolida datos provenientes de los pipelines, Power Apps, Python y Web Services. Desde aquí se sirve la información procesada hacia Power BI para su análisis.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">🐍 Python & Web Service</p>
+                <p>Scripts de Python y Web Services complementan la arquitectura con procesamiento personalizado e integraciones externas, enviando datos adicionales al Fabric Data Warehouse para enriquecer el análisis.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">📊 Power BI</p>
+                <p>Power BI se conecta al Fabric Data Warehouse para transformar los datos consolidados en dashboards interactivos y reportes dinámicos, facilitando el análisis de indicadores clave para los usuarios finales.</p>
+              </div>
+              <div>
+                <p class="font-bold text-blue-900 mb-1">👥 End User</p>
+                <p>Los usuarios finales acceden a los reportes e insights generados en Power BI para la toma de decisiones basada en datos, siendo el punto de consumo final de toda la arquitectura de datos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Layer – Modelo de Datos -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold flex items-center pt-4">
+              <span class="mr-2 text-2xl">🗄️</span> Data Layer – Capa de Datos
+            </h3>
+            <p class="leading-relaxed">
+              En esta capa se diseñaron y consolidaron las bases de datos
+              necesarias para el análisis del KPI. Estas tablas permiten
+              capturar, organizar y relacionar la información proveniente de
+              pedidos, producciones, defectos y datos maestros, asegurando
+              consistencia y trazabilidad en todo el flujo de información.
+            </p>
+
+            <h4 class="text-lg font-semibold pt-2">
+              📊 Modelo de datos en Power BI
+            </h4>
+            <p class="leading-relaxed">
+              El modelo de datos fue construido en Power BI a partir de las
+              tablas publicadas desde el entorno de Microsoft Fabric. Las
+              relaciones se establecen entre las tablas de hechos y dimensiones
+              mediante claves primarias y foráneas. La estructura responde a un
+              <strong>esquema en estrella</strong>, permitiendo eficiencia en
+              los análisis.
+            </p>
+            <p class="leading-relaxed">
+              Dentro de este modelo, se incluye una tabla de fechas
+              (<em>Calendario</em>) para análisis temporales y una tabla de
+              medidas que contiene indicadores calculados como el porcentaje del
+              KPI, cantidad producida, cantidad pedida, entre otros.
+            </p>
+            <p class="leading-relaxed">
+              Este modelo es administrado por el
+              <strong>Analista de Inteligencia de Negocios</strong>, quien se
+              encarga de estructurar y validar los datos antes de la
+              construcción del dashboard.
+            </p>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/modelo-conceptual.PNG"
+                alt="Modelo de datos en Power BI"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+          </div>
+
+          <!-- ETL Layer -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold flex items-center pt-4">
+              <span class="mr-2 text-2xl">⚙️</span> ETL Layer – Capa de
+              Extracción, Transformación y Carga
+            </h3>
+            <p class="leading-relaxed">
+              En esta capa se gestionan los procesos de
+              <strong>ingesta, transformación y carga</strong> de datos,
+              asegurando que la información esté siempre actualizada y
+              disponible para los diferentes análisis del proyecto. Aquí se
+              integran el <em>notebook en PySpark</em> y el
+              <em>pipeline en Microsoft Fabric</em>, que trabajan de manera
+              conjunta para garantizar eficiencia, trazabilidad y control en el
+              flujo de datos.
+            </p>
+
+            <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-blue-900">
+              <p class="font-bold text-blue-900 mb-2">📁 Origen de Datos</p>
+              <p>
+                Los datos utilizados en esta etapa provienen de tablas
+                consolidadas en Azure SQL y replicadas en Microsoft Fabric.
+                Estas incluyen información de
+                <strong>pedidos, producciones, defectos y datos maestros</strong>,
+                las cuales constituyen la base sobre la cual se ejecutan los
+                procesos de notebook y pipeline.
+              </p>
+            </div>
+
+            <h4 class="font-semibold text-lg pt-2">Notebooks en PySpark</h4>
+            <p class="leading-relaxed">
+              Una parte clave del proceso automatizado fue el desarrollo de
+              <strong>2 notebooks en PySpark</strong>, que se ejecutan al final
+              del pipeline diario en Microsoft Fabric. Estos notebooks tienen
+              como propósito principal
+              <strong>consultar la producción hecha en el día</strong> y enviar
+              dicha información automáticamente por
+              <strong>correo electrónico y WhatsApp</strong> al usuario.
+            </p>
+
+            <p class="font-medium pt-2">Notebook para envío por correo:</p>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/codigo-correo.png"
+                alt="Código notebook envío por correo"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+
+            <p class="font-medium pt-2">Notebook para envío por WhatsApp:</p>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/codigo-wpp.png"
+                alt="Código notebook envío por WhatsApp"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+
+            <h4 class="font-semibold text-lg pt-2">Flujo del Proceso</h4>
+            <ul class="list-disc pl-8 space-y-2">
+              <li>
+                <strong>Consulta de Datos:</strong> Los notebooks se conectan al
+                Data Warehouse en Fabric y realizan una consulta SQL para contar
+                los pedidos registrados en la fecha actual.
+              </li>
+              <li>
+                <strong>Formateo de Resultados:</strong> La información obtenida
+                se transforma en un formato legible para que pueda ser
+                interpretada rápidamente por los usuarios finales.
+              </li>
+              <li>
+                <strong>Notificación Vía Correo:</strong> Se envía un correo
+                automático con los resultados, utilizando un servidor SMTP
+                configurado en Fabric.
+              </li>
+              <li>
+                <strong>Notificación Vía WhatsApp:</strong> Se envía un mensaje
+                de WhatsApp automático con los resultados, utilizando el API de
+                Twilio configurado en Fabric.
+              </li>
+            </ul>
+
+            <div class="grid md:grid-cols-2 gap-4 pt-2">
+              <div class="space-y-2">
+                <p class="font-medium text-sm text-slate-600">Resultado — Correo electrónico:</p>
+                <img
+                  src="./public/img/correo.jpeg"
+                  alt="Correo electrónico de alerta de nuevos pedidos"
+                  class="w-full h-auto rounded-xl shadow-md border"
+                />
+              </div>
+              <div class="space-y-2">
+                <p class="font-medium text-sm text-slate-600">Resultado — WhatsApp (Twilio):</p>
+                <img
+                  src="./public/img/wpp.PNG"
+                  alt="Mensaje WhatsApp de alerta de nuevos pedidos"
+                  class="w-full h-auto rounded-xl shadow-md border"
+                />
+              </div>
+            </div>
+
+            <h4 class="font-semibold text-lg pt-4">
+              Pipeline en Microsoft Fabric
+            </h4>
+            <p class="leading-relaxed">
+              La automatización del flujo de datos se gestiona mediante un
+              pipeline en Microsoft Fabric llamado <strong>pl_tablas</strong>,
+              configurado para actualizar diariamente las tablas del Data
+              Warehouse y ejecutar los notebooks PySpark al finalizar. El
+              pipeline sigue una estructura secuencial donde cada tabla es
+              procesada individualmente mediante Data Flows.
+            </p>
+            <div class="overflow-x-auto shadow-sm border border-slate-200 rounded-lg">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead class="bg-slate-800 text-white">
+                  <tr>
+                    <th class="px-6 py-3 border">Característica</th>
+                    <th class="px-6 py-3 border">Detalle</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y">
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Nombre</td>
+                    <td class="px-6 py-3 border">pl_tablas</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Frecuencia de Ejecución</td>
+                    <td class="px-6 py-3 border">Diario a las 8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Herramienta Usada</td>
+                    <td class="px-6 py-3 border">Microsoft Fabric - Data Factory</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Tipo de Tareas</td>
+                    <td class="px-6 py-3 border">
+                      <ul class="list-disc pl-4 space-y-1">
+                        <li>Actualiza las tablas importadas desde Azure SQL hacia Fabric Data Warehouse.</li>
+                        <li>Ejecuta automáticamente los Notebooks de PySpark (correo y WhatsApp) al finalizar.</li>
+                        <li>No realiza carga desde fuentes externas, sino sincronización y limpieza de tablas ya integradas.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Tablas Actualizadas</td>
+                    <td class="px-6 py-3 border">Caracteristica, Pais, Produccion, Categoria_def, Especificacion, Tipo_vidrio, Cliente, Modelo_veh, Defecto, Pedido</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-3 border font-medium">Notebooks Ejecutados</td>
+                    <td class="px-6 py-3 border">nb_email, nb_wpp</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/pipeline.PNG"
+                alt="Flujo del Pipeline en Microsoft Fabric"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+          </div>
+
+          <!-- Application Layer -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold flex items-center pt-4">
+              <span class="mr-2 text-2xl">📱</span> Application Layer – Capa de
+              Aplicación
+            </h3>
+            <p class="leading-relaxed">
+              Uno de los pilares del proyecto fue la implementación de una
+              aplicación operativa en Power Apps que permite registrar, consultar
+              y actualizar información clave como pedidos, producciones, defectos
+              y datos maestros. A continuación, se muestra el diagrama de flujo
+              que resume el funcionamiento lógico detrás de la aplicación.
+            </p>
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <img
+                src="./public/img/diagrama-flujo.png"
+                alt="Diagrama de Flujo del Proceso"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+          </div>
+        </section>
+
         <section>
           <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2 mb-4">
             5. Conclusiones
           </h2>
-          <p class="mb-4">
-            La implementación de Power BI marca un paso clave en la evolución
-            digital de Grupo ABC, integrando un modelo de datos para responder a
-            las exigencias de un mercado dinámico y altamente competitivo. Este
-            proyecto no solo asegura una gestión eficiente y automatizada de la
-            información, sino que convierte los datos en un activo estratégico
-            que impulsa la innovación, la agilidad y la capacidad de respuesta
-            de la organización.
+          <p class="mb-4 leading-relaxed">
+            El proyecto <strong>"Analytics and Data Visualization with Power BI for ABC Glass"</strong>
+            logró integrar exitosamente diversas herramientas tecnológicas para
+            transformar por completo la gestión operativa y analítica del proceso
+            de producción y seguimiento de pedidos. Desde el registro y
+            validación de pedidos y producciones en Power Apps hasta la
+            actualización automatizada del modelo en Microsoft Fabric, se
+            construyó un flujo sólido y eficiente que garantiza información
+            actualizada en tiempo real.
+          </p>
+          <p class="mb-4 leading-relaxed">
+            A través de un modelo de datos estructurado bajo un esquema en
+            estrella y la automatización de cálculos en notebooks PySpark, se
+            permitió calcular de forma precisa el KPI definido para el negocio,
+            asegurando trazabilidad y confiabilidad en cada etapa del proceso.
+            El dashboard en Power BI facilitó el análisis visual, permitiendo
+            identificar oportunidades de mejora por modelo de vehículo, tipo de
+            vidrio, cliente y país, así como comprender la relación entre la
+            producción y los pedidos a lo largo del tiempo.
+          </p>
+          <p class="leading-relaxed">
+            Además, se estableció un sistema automatizado de notificación diaria
+            mediante notebooks PySpark que distribuyen alertas de nuevos pedidos
+            por correo electrónico y WhatsApp a los responsables sin intervención
+            manual, lo que demuestra una clara apuesta por la eficiencia y la
+            continuidad operativa. Todo este ecosistema digital ha permitido
+            simular cómo una empresa manufacturera del sector automotriz puede
+            adoptar decisiones basadas en datos confiables, mejorando tanto el
+            control de producción como el servicio a sus clientes OEM. En
+            resumen, este proyecto no solo ha cumplido con el objetivo de medir y
+            visualizar el KPI de producción, sino que también ha demostrado cómo
+            la integración tecnológica puede aportar valor real, escalable y
+            sostenible en entornos industriales de alta exigencia como el de la
+            manufactura de vidrio automotriz.
           </p>
         </section>
       </main>
