@@ -1008,18 +1008,18 @@
           </div>
 
           <!-- Application Layer -->
-          <div class="space-y-6">
+          <div class="space-y-8">
             <h3 class="text-xl font-semibold flex items-center pt-4">
               <span class="mr-2 text-2xl">📱</span> Application Layer – Capa de
               Aplicación
             </h3>
             <p class="leading-relaxed">
               Uno de los pilares del proyecto fue la implementación de una
-              aplicación operativa en Power Apps que permite registrar,
-              consultar y actualizar información clave como pedidos,
-              producciones, defectos y datos maestros. A continuación, se
-              muestra el diagrama de flujo que resume el funcionamiento lógico
-              detrás de la aplicación.
+              aplicación web que permite registrar, consultar y actualizar
+              información clave como pedidos, producciones, defectos y datos
+              maestros. A continuación, se muestra el diagrama de flujo que
+              resume el funcionamiento lógico detrás de la aplicación, seguido
+              de cada uno de sus módulos y casos de uso.
             </p>
             <div class="bg-slate-100 p-4 rounded-xl">
               <img
@@ -1027,6 +1027,221 @@
                 alt="Diagrama de Flujo del Proceso"
                 class="w-full h-auto rounded shadow-md"
               />
+            </div>
+
+            <!-- Home -->
+            <div class="space-y-3">
+              <h4 class="font-semibold text-lg text-blue-800">🏠 Pantalla de Inicio</h4>
+              <p class="leading-relaxed">
+                Al ingresar a la aplicación el usuario accede a la pantalla
+                principal, desde la cual puede navegar a los tres módulos
+                disponibles: <strong>Pedidos</strong>,
+                <strong>Producción</strong> y
+                <strong>Dashboard y reportes</strong>.
+              </p>
+              <div class="bg-slate-100 p-3 rounded-xl">
+                <img
+                  src="./public/img/web/home.PNG"
+                  alt="Pantalla de inicio"
+                  class="w-full h-auto rounded shadow-md"
+                />
+              </div>
+            </div>
+
+            <!-- MÓDULO PEDIDOS -->
+            <div class="space-y-6">
+              <h4 class="font-bold text-lg border-l-4 border-blue-600 pl-3">
+                📋 Módulo: Pedidos
+              </h4>
+              <p class="leading-relaxed">
+                Gestiona los datos maestros y transaccionales relacionados con
+                los pedidos de vidrio automotriz. Contiene cuatro pestañas:
+                <strong>Cliente</strong>, <strong>Modelo de vehículo</strong>,
+                <strong>Especificación</strong> y <strong>Pedido</strong>.
+              </p>
+
+              <!-- Cliente -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">👤 Cliente</p>
+                <p class="text-sm leading-relaxed">
+                  Listado paginado de clientes con búsqueda por nombre. Muestra
+                  las columnas <strong>CLIENTE_ID</strong>,
+                  <strong>NOMBRE</strong> y <strong>PAIS</strong>. Cada fila
+                  dispone de acciones <em>Editar</em> y <em>Eliminar</em>. El
+                  formulario de creación solicita el nombre del cliente y el
+                  país de origen mediante un selector.
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/cliente.PNG" alt="CRUD Cliente - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/cliente-create.PNG" alt="CRUD Cliente - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modelo de vehículo -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">🚗 Modelo de vehículo</p>
+                <p class="text-sm leading-relaxed">
+                  Catálogo paginado de modelos de vehículo con buscador.
+                  Presenta las columnas <strong>MODELO_VEHICULO_ID</strong> y
+                  <strong>NOMBRE</strong>, con acciones de <em>Editar</em> y
+                  <em>Eliminar</em> por fila. El formulario de alta requiere
+                  únicamente el nombre del modelo.
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/modelo.PNG" alt="CRUD Modelo vehículo - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/modelo-create.PNG" alt="CRUD Modelo vehículo - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Especificación -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">🔩 Especificación</p>
+                <p class="text-sm leading-relaxed">
+                  Listado con búsqueda por modelo de vehículo que muestra
+                  <strong>ESPECIFICACION_ID</strong>,
+                  <strong>TIPO VIDRIO</strong>,
+                  <strong>CARACTERÍSTICA</strong>,
+                  <strong>MODELO VEHÍCULO</strong>,
+                  <strong>PRECIO VENTA UNIDAD</strong> y
+                  <strong>COSTO UNIDAD</strong>. El formulario de creación
+                  incluye selectores para tipo de vidrio, característica y
+                  modelo de vehículo, además de campos numéricos para precio
+                  de venta y costo por unidad.
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/especificacion.PNG" alt="CRUD Especificación - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/especificacion-create.PNG" alt="CRUD Especificación - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pedido -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">📄 Pedido</p>
+                <p class="text-sm leading-relaxed">
+                  Tabla transaccional paginada (371 páginas) con búsqueda por
+                  especificación. Columnas: <strong>PEDIDO_ID</strong>,
+                  <strong>ESPECIFICACIÓN</strong>, <strong>CLIENTE</strong>,
+                  <strong>CANTIDAD PEDIDA</strong> y
+                  <strong>FECHA PEDIDO</strong>. El formulario de alta permite
+                  seleccionar especificación y cliente mediante desplegables,
+                  ingresar la cantidad pedida y seleccionar la fecha del pedido.
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/pedido.PNG" alt="CRUD Pedido - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/pedido-create.PNG" alt="CRUD Pedido - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MÓDULO PRODUCCIÓN -->
+            <div class="space-y-6">
+              <h4 class="font-bold text-lg border-l-4 border-blue-600 pl-3">
+                ⚙️ Módulo: Producción
+              </h4>
+              <p class="leading-relaxed">
+                Gestiona los registros de producción y el catálogo de defectos
+                de manufactura. Contiene dos pestañas:
+                <strong>Defecto</strong> y <strong>Producción</strong>.
+              </p>
+
+              <!-- Defecto -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">⚠️ Defecto</p>
+                <p class="text-sm leading-relaxed">
+                  Catálogo de defectos de manufactura con búsqueda general.
+                  Muestra <strong>DEFECTO_ID</strong>,
+                  <strong>DESCRIPCION</strong> y
+                  <strong>CATEGORÍA DEFECTO</strong>, con acciones de
+                  <em>Editar</em> y <em>Eliminar</em>. El formulario de
+                  creación solicita la descripción del defecto y su categoría
+                  mediante un selector (Visual, Del laminado, De valor
+                  agregado, Horno templado, Calidad Óptica).
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/defecto.PNG" alt="CRUD Defecto - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/defecto-create.PNG" alt="CRUD Defecto - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Producción -->
+              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+                <p class="font-semibold text-slate-700">🏭 Producción</p>
+                <p class="text-sm leading-relaxed">
+                  Tabla transaccional paginada (700 páginas) con búsqueda por
+                  pedido. Columnas: <strong>PRODUCCION_ID</strong>,
+                  <strong>PEDIDO</strong> (cliente + modelo + tipo vidrio),
+                  <strong>DEFECTO</strong>, <strong>CANTIDAD PRODUCIDA</strong>
+                  y <strong>FECHA PRODUCIDO</strong>. El formulario de alta
+                  incluye buscador de pedido por cliente o modelo, selector de
+                  defecto (opcional), campo de cantidad producida y selector de
+                  fecha de producción.
+                </p>
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Vista listado</p>
+                    <img src="./public/img/web/produccion.PNG" alt="CRUD Producción - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
+                    <img src="./public/img/web/produccion-create.PNG" alt="CRUD Producción - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MÓDULO DASHBOARD -->
+            <div class="space-y-3">
+              <h4 class="font-bold text-lg border-l-4 border-blue-600 pl-3">
+                📊 Módulo: Dashboard y reportes
+              </h4>
+              <p class="leading-relaxed">
+                Vista integrada de Power BI embebida en la aplicación. Presenta
+                los KPI principales: <strong>Vidrios producidos</strong>,
+                <strong>Yield</strong>, <strong>Vidrios con defecto</strong> y
+                <strong>Vidrios sin defecto</strong>, cada uno comparado contra
+                su objetivo. Incluye gráficos de <em>Producción de vidrios por
+                año</em> (barras agrupadas 2024–2026) y
+                <em>Producción vs Defectos por mes</em>, permitiendo al usuario
+                un análisis visual directo desde la misma aplicación sin
+                necesidad de acceder a Power BI por separado.
+              </p>
+              <div class="bg-slate-100 p-3 rounded-xl">
+                <img
+                  src="./public/img/web/dashboard.PNG"
+                  alt="Dashboard y reportes embebido"
+                  class="w-full h-auto rounded shadow-md"
+                />
+              </div>
             </div>
           </div>
         </section>
