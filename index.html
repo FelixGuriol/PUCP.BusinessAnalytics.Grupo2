@@ -637,24 +637,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="px-6 py-3 border font-medium">Power Apps</td>
-                    <td class="px-6 py-3 border">
-                      Registro operativo de pedidos, entregas, inventario y
-                      actualización de tablas maestras.
-                    </td>
-                  </tr>
-                  <tr>
                     <td class="px-6 py-3 border font-medium">Lucidchart</td>
                     <td class="px-6 py-3 border">
                       Diseño de diagramas de flujo y modelos de arquitectura
                       para documentar los procesos.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="px-6 py-3 border font-medium">Power Automate</td>
-                    <td class="px-6 py-3 border">
-                      Automatización de reportes y envío de información
-                      periódica vía correo electrónico.
                     </td>
                   </tr>
                 </tbody>
@@ -672,7 +658,7 @@
               herramientas en la nube con el fin de automatizar y facilitar la
               medición del <strong>KPI</strong>. Esta solución combina el uso de
               una base de datos en SQL Azure, procesamiento automático en
-              Microsoft Fabric, aplicaciones operativas en Power Apps, flujos de
+              Microsoft Fabric, una aplicación web operativa, flujos de
               automatización con Power Automate y visualizaciones con Power BI.
             </p>
             <div class="bg-slate-100 p-4 rounded-xl">
@@ -708,9 +694,9 @@
                 </p>
               </div>
               <div>
-                <p class="font-bold text-blue-900 mb-1">📱 Power Apps</p>
+                <p class="font-bold text-blue-900 mb-1">📱 Aplicación Web</p>
                 <p>
-                  Power Apps permite a los usuarios operativos registrar y
+                  La aplicación web permite a los usuarios operativos registrar y
                   actualizar información directamente desde formularios
                   conectados a la arquitectura, alimentando el Fabric Data
                   Warehouse con datos capturados en tiempo real.
@@ -733,7 +719,7 @@
                 </p>
                 <p>
                   El Fabric Data Warehouse es el repositorio central que
-                  consolida datos provenientes de los pipelines, Power Apps,
+                  consolida datos provenientes de los pipelines, la aplicación web,
                   Python y Web Services. Desde aquí se sirve la información
                   procesada hacia Power BI para su análisis.
                 </p>
@@ -1031,7 +1017,9 @@
 
             <!-- Home -->
             <div class="space-y-3">
-              <h4 class="font-semibold text-lg text-blue-800">🏠 Pantalla de Inicio</h4>
+              <h4 class="font-semibold text-lg text-blue-800">
+                🏠 Pantalla de Inicio
+              </h4>
               <p class="leading-relaxed">
                 Al ingresar a la aplicación el usuario accede a la pantalla
                 principal, desde la cual puede navegar a los tres módulos
@@ -1061,7 +1049,9 @@
               </p>
 
               <!-- Cliente -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
                 <p class="font-semibold text-slate-700">👤 Cliente</p>
                 <p class="text-sm leading-relaxed">
                   Listado paginado de clientes con búsqueda por nombre. Muestra
@@ -1071,21 +1061,35 @@
                   formulario de creación solicita el nombre del cliente y el
                   país de origen mediante un selector.
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/cliente.PNG" alt="CRUD Cliente - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/cliente.PNG"
+                      alt="CRUD Cliente - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/cliente-create.PNG" alt="CRUD Cliente - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/cliente-create.PNG"
+                      alt="CRUD Cliente - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
 
               <!-- Modelo de vehículo -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
-                <p class="font-semibold text-slate-700">🚗 Modelo de vehículo</p>
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
+                <p class="font-semibold text-slate-700">
+                  🚗 Modelo de vehículo
+                </p>
                 <p class="text-sm leading-relaxed">
                   Catálogo paginado de modelos de vehículo con buscador.
                   Presenta las columnas <strong>MODELO_VEHICULO_ID</strong> y
@@ -1093,47 +1097,70 @@
                   <em>Eliminar</em> por fila. El formulario de alta requiere
                   únicamente el nombre del modelo.
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/modelo.PNG" alt="CRUD Modelo vehículo - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/modelo.PNG"
+                      alt="CRUD Modelo vehículo - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/modelo-create.PNG" alt="CRUD Modelo vehículo - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/modelo-create.PNG"
+                      alt="CRUD Modelo vehículo - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
 
               <!-- Especificación -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
                 <p class="font-semibold text-slate-700">🔩 Especificación</p>
                 <p class="text-sm leading-relaxed">
                   Listado con búsqueda por modelo de vehículo que muestra
                   <strong>ESPECIFICACION_ID</strong>,
-                  <strong>TIPO VIDRIO</strong>,
-                  <strong>CARACTERÍSTICA</strong>,
+                  <strong>TIPO VIDRIO</strong>, <strong>CARACTERÍSTICA</strong>,
                   <strong>MODELO VEHÍCULO</strong>,
                   <strong>PRECIO VENTA UNIDAD</strong> y
                   <strong>COSTO UNIDAD</strong>. El formulario de creación
                   incluye selectores para tipo de vidrio, característica y
-                  modelo de vehículo, además de campos numéricos para precio
-                  de venta y costo por unidad.
+                  modelo de vehículo, además de campos numéricos para precio de
+                  venta y costo por unidad.
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/especificacion.PNG" alt="CRUD Especificación - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/especificacion.PNG"
+                      alt="CRUD Especificación - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/especificacion-create.PNG" alt="CRUD Especificación - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/especificacion-create.PNG"
+                      alt="CRUD Especificación - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
 
               <!-- Pedido -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
                 <p class="font-semibold text-slate-700">📄 Pedido</p>
                 <p class="text-sm leading-relaxed">
                   Tabla transaccional paginada (371 páginas) con búsqueda por
@@ -1144,14 +1171,24 @@
                   seleccionar especificación y cliente mediante desplegables,
                   ingresar la cantidad pedida y seleccionar la fecha del pedido.
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/pedido.PNG" alt="CRUD Pedido - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/pedido.PNG"
+                      alt="CRUD Pedido - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/pedido-create.PNG" alt="CRUD Pedido - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/pedido-create.PNG"
+                      alt="CRUD Pedido - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
@@ -1169,51 +1206,76 @@
               </p>
 
               <!-- Defecto -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
                 <p class="font-semibold text-slate-700">⚠️ Defecto</p>
                 <p class="text-sm leading-relaxed">
                   Catálogo de defectos de manufactura con búsqueda general.
                   Muestra <strong>DEFECTO_ID</strong>,
                   <strong>DESCRIPCION</strong> y
                   <strong>CATEGORÍA DEFECTO</strong>, con acciones de
-                  <em>Editar</em> y <em>Eliminar</em>. El formulario de
-                  creación solicita la descripción del defecto y su categoría
-                  mediante un selector (Visual, Del laminado, De valor
-                  agregado, Horno templado, Calidad Óptica).
+                  <em>Editar</em> y <em>Eliminar</em>. El formulario de creación
+                  solicita la descripción del defecto y su categoría mediante un
+                  selector (Visual, Del laminado, De valor agregado, Horno
+                  templado, Calidad Óptica).
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/defecto.PNG" alt="CRUD Defecto - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/defecto.PNG"
+                      alt="CRUD Defecto - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/defecto-create.PNG" alt="CRUD Defecto - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/defecto-create.PNG"
+                      alt="CRUD Defecto - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
 
               <!-- Producción -->
-              <div class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3">
+              <div
+                class="bg-slate-50 rounded-xl border border-slate-200 p-5 space-y-3"
+              >
                 <p class="font-semibold text-slate-700">🏭 Producción</p>
                 <p class="text-sm leading-relaxed">
                   Tabla transaccional paginada (700 páginas) con búsqueda por
                   pedido. Columnas: <strong>PRODUCCION_ID</strong>,
                   <strong>PEDIDO</strong> (cliente + modelo + tipo vidrio),
-                  <strong>DEFECTO</strong>, <strong>CANTIDAD PRODUCIDA</strong>
-                  y <strong>FECHA PRODUCIDO</strong>. El formulario de alta
+                  <strong>DEFECTO</strong>,
+                  <strong>CANTIDAD PRODUCIDA</strong> y
+                  <strong>FECHA PRODUCIDO</strong>. El formulario de alta
                   incluye buscador de pedido por cliente o modelo, selector de
                   defecto (opcional), campo de cantidad producida y selector de
                   fecha de producción.
                 </p>
-                <div class="grid md:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-4">
                   <div>
                     <p class="text-xs text-slate-500 mb-1">Vista listado</p>
-                    <img src="./public/img/web/produccion.PNG" alt="CRUD Producción - listado" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <img
+                      src="./public/img/web/produccion.PNG"
+                      alt="CRUD Producción - listado"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                   <div>
-                    <p class="text-xs text-slate-500 mb-1">Formulario nuevo registro</p>
-                    <img src="./public/img/web/produccion-create.PNG" alt="CRUD Producción - crear" class="w-full h-auto rounded-lg shadow-sm border" />
+                    <p class="text-xs text-slate-500 mb-1">
+                      Formulario nuevo registro
+                    </p>
+                    <img
+                      src="./public/img/web/produccion-create.PNG"
+                      alt="CRUD Producción - crear"
+                      class="w-full h-auto rounded-lg shadow-sm border"
+                    />
                   </div>
                 </div>
               </div>
@@ -1229,11 +1291,11 @@
                 los KPI principales: <strong>Vidrios producidos</strong>,
                 <strong>Yield</strong>, <strong>Vidrios con defecto</strong> y
                 <strong>Vidrios sin defecto</strong>, cada uno comparado contra
-                su objetivo. Incluye gráficos de <em>Producción de vidrios por
-                año</em> (barras agrupadas 2024–2026) y
-                <em>Producción vs Defectos por mes</em>, permitiendo al usuario
-                un análisis visual directo desde la misma aplicación sin
-                necesidad de acceder a Power BI por separado.
+                su objetivo. Incluye gráficos de
+                <em>Producción de vidrios por año</em> (barras agrupadas
+                2024–2026) y <em>Producción vs Defectos por mes</em>,
+                permitiendo al usuario un análisis visual directo desde la misma
+                aplicación sin necesidad de acceder a Power BI por separado.
               </p>
               <div class="bg-slate-100 p-3 rounded-xl">
                 <img
@@ -1258,7 +1320,7 @@
             logró integrar exitosamente diversas herramientas tecnológicas para
             transformar por completo la gestión operativa y analítica del
             proceso de producción y seguimiento de pedidos. Desde el registro y
-            validación de pedidos y producciones en Power Apps hasta la
+            validación de pedidos y producciones en la aplicación web hasta la
             actualización automatizada del modelo en Microsoft Fabric, se
             construyó un flujo sólido y eficiente que garantiza información
             actualizada en tiempo real.
